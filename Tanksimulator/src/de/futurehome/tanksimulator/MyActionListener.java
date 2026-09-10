@@ -18,8 +18,9 @@ public class MyActionListener implements ActionListener {
 			 double fuellstand = f.myTank.getFuellstand();
 			 fuellstand = fuellstand + 5;
 			 f.myTank.setFuellstand(fuellstand);
-
-			 f.lblFuellstand.setText(""+fuellstand);
+			 f.lblFuellstand.setText("" + fuellstand);
+			 double FuellstandP = (fuellstand/ 200)*100;
+			 f.FuellstandP2.setText(""+ FuellstandP + ("%"));
 		}
 		
 		if (obj == f.btnVerbrauchen) {
@@ -27,6 +28,8 @@ public class MyActionListener implements ActionListener {
 			fuellstand = fuellstand - 2;
 			f.myTank.setFuellstand(fuellstand);
 			f.lblFuellstand.setText(""+fuellstand);
+			double FuellstandP = (fuellstand/ 200)*100;
+			 f.FuellstandP2.setText(""+ FuellstandP + ("%"));
 			
 		}
 		if (obj == f.btnZuruecksetzen) {
@@ -34,6 +37,8 @@ public class MyActionListener implements ActionListener {
 			fuellstand = fuellstand - fuellstand;
 			f.myTank.setFuellstand(fuellstand);
 			f.lblFuellstand.setText(""+fuellstand);
+			double FuellstandP = (fuellstand/ 200)*100;
+			 f.FuellstandP2.setText(""+ FuellstandP + ("%"));
 			
 		}
 		
