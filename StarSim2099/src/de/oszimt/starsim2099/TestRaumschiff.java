@@ -39,6 +39,8 @@ public class TestRaumschiff {
 		if (meinRaumschiff.getPosY() == posY)
 			System.out.println("Implementierung 'Position Y' korrekt!");
 
+		
+		
 	}
 
 }
