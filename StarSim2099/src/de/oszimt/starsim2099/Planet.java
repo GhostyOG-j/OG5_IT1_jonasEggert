@@ -18,19 +18,19 @@ public class Planet {
 		
 	}
 	
-	public double getPosx() {
+	public double getPosX() {
 		return posX;
 	}
 
-	public void setPosx(double posx) {
+	public void setPosX(double posx) {
 		this.posX = posx;
 	}
 
-	public double getPosy() {
+	public double getPosY() {
 		return posY;
 	}
 
-	public void setPosy(double posy) {
+	public void setPosY(double posy) {
 		this.posY = posy;
 	}
 

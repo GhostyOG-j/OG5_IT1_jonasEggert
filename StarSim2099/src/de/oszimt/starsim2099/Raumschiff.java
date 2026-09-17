@@ -14,24 +14,34 @@ public class Raumschiff {
 	String typ;
 	String antrieb;
 	int winkel;
+	int maxLadekapazitaet;
+	
+
 	// Methoden
 	public Raumschiff() {
 		
 	}
 	
-	public double getPosx() {
+	public int getMaxLadekapazitaet() {
+		return maxLadekapazitaet;
+	}
+
+	public void setMaxLadekapazitaet(int maxLadekapazitaet) {
+		this.maxLadekapazitaet = maxLadekapazitaet;
+	}
+	public double getPosX() {
 		return posX;
 	}
 
-	public void setPosx(double posx) {
+	public void setPosX(double posx) {
 		this.posX = posx;
 	}
 
-	public double getPosy() {
+	public double getPosY() {
 		return posY;
 	}
 
-	public void setPosy(double posy) {
+	public void setPosY(double posy) {
 		this.posY = posy;
 	}
 
