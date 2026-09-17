@@ -10,8 +10,8 @@ public class Pilot {
 
 	// Attribute
 	String name;
-	double posx;
-	double posy;
+	double posX;
+	double posY;
 	String grad;
 	// Methoden
 	public Pilot() {

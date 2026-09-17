@@ -9,8 +9,8 @@ package de.oszimt.starsim2099;
 public class Planet {
 
 	// Attribute
-	double posx;
-	double posy;
+	double posX;
+	double posY;
 	int anzahlHafen;
 	String name;
 	// Methoden

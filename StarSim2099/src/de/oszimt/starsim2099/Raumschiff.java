@@ -9,8 +9,8 @@ package de.oszimt.starsim2099;
 public class Raumschiff {
 
 	// Attribute
-	double posx;
-	double posy;
+	double posX;
+	double posY;
 	String typ;
 	String antrieb;
 	int winkel;
