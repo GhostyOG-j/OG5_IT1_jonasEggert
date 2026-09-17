@@ -9,8 +9,46 @@ package de.oszimt.starsim2099;
 public class Planet {
 
 	// Attribute
-	
+	double posx;
+	double posy;
+	int anzahlHafen;
+	String name;
 	// Methoden
+	public Planet() {
+		
+	}
+	
+	public double getPosx() {
+		return posx;
+	}
+
+	public void setPosx(double posx) {
+		this.posx = posx;
+	}
+
+	public double getPosy() {
+		return posy;
+	}
+
+	public void setPosy(double posy) {
+		this.posy = posy;
+	}
+
+	public int getAnzahlHafen() {
+		return anzahlHafen;
+	}
+
+	public void setAnzahlHafen(int anzahlHafen) {
+		this.anzahlHafen = anzahlHafen;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	// Darstellung
 	public static char[][] getDarstellung() {
