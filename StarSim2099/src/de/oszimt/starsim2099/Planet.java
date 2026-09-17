@@ -19,19 +19,19 @@ public class Planet {
 	}
 	
 	public double getPosx() {
-		return posx;
+		return posX;
 	}
 
 	public void setPosx(double posx) {
-		this.posx = posx;
+		this.posX = posx;
 	}
 
 	public double getPosy() {
-		return posy;
+		return posY;
 	}
 
 	public void setPosy(double posy) {
-		this.posy = posy;
+		this.posY = posy;
 	}
 
 	public int getAnzahlHafen() {

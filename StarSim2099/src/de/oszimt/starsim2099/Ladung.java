@@ -19,19 +19,19 @@ public class Ladung {
 	}
 	
 	public double getOsx() {
-		return osx;
+		return posX;
 	}
 
 	public void setOsx(double osx) {
-		this.osx = osx;
+		this.posX = osx;
 	}
 
 	public double getPosy() {
-		return posy;
+		return posY;
 	}
 
 	public void setPosy(double posy) {
-		this.posy = posy;
+		this.posY = posy;
 	}
 
 	public int getMasse() {
