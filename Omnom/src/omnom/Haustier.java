@@ -63,12 +63,12 @@ public class Haustier {
 		setHunger(this.hunger + wert);
 	}
 	
-	public void schlafen(int wert) {
-		setMuede(this.muede + wert);
+	public void schlafen(int wert1) {
+		setMuede(this.muede + wert1);
 	}
 	
-	public void spielen(int wert) {
-		setZufrieden(this.zufrieden + wert);
+	public void spielen(int wert2) {
+		setZufrieden(this.zufrieden + wert2);
 	}
 	
 	public void heilen() {
