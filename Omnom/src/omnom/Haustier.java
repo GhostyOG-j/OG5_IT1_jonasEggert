@@ -31,7 +31,7 @@ public class Haustier {
 	}
 
 	public void setMuede(int muede) {
-		this.muede = Math.max(0, Math.min(100, hunger));
+		this.muede = Math.max(0, Math.min(100, muede));
 	}
 
 	public int getZufrieden() {
@@ -39,7 +39,7 @@ public class Haustier {
 	}
 
 	public void setZufrieden(int zufrieden) {
-		this.zufrieden = Math.max(0, Math.min(100, hunger));
+		this.zufrieden = Math.max(0, Math.min(100, zufrieden));
 	}
 
 	public int getGesund() {
@@ -47,7 +47,7 @@ public class Haustier {
 	}
 
 	public void setGesund(int gesund) {
-		this.gesund = Math.max(0, Math.min(100, hunger));
+		this.gesund = Math.max(0, Math.min(100, gesund));
 	}
 
 	public String getName() {
