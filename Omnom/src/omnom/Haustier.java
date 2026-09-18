@@ -9,7 +9,7 @@ public class Haustier {
 	String name;
 
 // Konstruktor
-	public Haustier() {
+	public Haustier(String name) {
 		this.gesund = 100;
 		this.hunger = 100;
 		this.muede = 100;
@@ -71,7 +71,7 @@ public class Haustier {
 		setZufrieden(this.zufrieden + wert);
 	}
 	
-	public void heilen(int wert) {
+	public void heilen() {
 		setGesund(100);
 	}
 	
