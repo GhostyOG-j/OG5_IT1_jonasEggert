@@ -52,8 +52,8 @@ public class Main {
 		// Mond hinzufügen
 				Mond meinMond = new Mond();
 				meinMond.setName("Mond");
-				meinMond.setPosX(160);
-				meinMond.setPosY(50);
+				meinMond.setPosX(Math.random() * universumBreite);
+				meinMond.setPosY(Math.random() * universumHoehe);
 				meinGame.addMond(meinMond);
 		//// Ladungen hinzufügen
 		// Pamps (grün)
