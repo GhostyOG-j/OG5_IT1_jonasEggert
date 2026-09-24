@@ -100,7 +100,7 @@ public class GameControl {
 		}
 	}
 
-	public void removeMond(Planet meinMond) {
+	public void removeMond(Mond meinMond) {
 		if (listMond.contains(meinMond)) {
 			listMond.remove(meinMond);
 		}
@@ -209,8 +209,8 @@ public class GameControl {
 		int centerX = (int) mond.getPosX();
 		int centerY = (int) mond.getPosY();
 		Position transformedPos = transformPos(new Position(centerX, centerY));
-		char[][] planetShape = Planet.getDarstellung();
-		drawShape(planetShape, mond_Color, transformedPos);
+		char[][] mondShape = Planet.getDarstellung();
+		drawShape(mondShape, mond_Color, transformedPos);
 	}
 
 	private void drawLadung(Ladung ladung) {
@@ -230,7 +230,7 @@ public class GameControl {
 		for (Planet planet : listPlaneten) {
 			drawPlanet(planet);
 		}
-		// Male alle Planeten
+		// Male alle Monde
 				for (Mond mond : listMond) {
 					drawMond(mond);
 				}
