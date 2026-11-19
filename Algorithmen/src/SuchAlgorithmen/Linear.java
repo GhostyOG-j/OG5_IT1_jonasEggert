@@ -2,7 +2,7 @@ package SuchAlgorithmen;
 
 import java.util.Random;
 
-public class Binär {
+public class Linear {
 
 	public static class SortedListGenerator {
 
