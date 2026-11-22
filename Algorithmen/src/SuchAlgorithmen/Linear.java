@@ -23,29 +23,31 @@ public class Linear {
 			final int ANZAHL = 20000000; // 20.000.000
 
 			long[] a = getSortedList(ANZAHL);
-			long gesuchteZahl = 1000000;
-			System.out.println("Die gesuchte zahl ist " + gesuchteZahl);
-			long time = System.currentTimeMillis();
+			long gesuchteZahl = 20000000;
+			System.out.println("Die gesuchte Zahl ist " + gesuchteZahl);
 
-			boolean gefunden = false;		// variable initalisiert und declariert
+			long startZeit = System.nanoTime();
 
-			for (int i = 0; i < a.length; i++) {		// for schleife zum suchen der zahl
+			boolean gefunden = false;
+			int trefferIndex = -1;
+
+			for (int i = 0; i < a.length; i++) {
 				if (a[i] == gesuchteZahl) {
-					System.out.println("der Index Ist" + i);				//wenn zahl gefunden wird dann wird der Index ausgegebn
+					trefferIndex = i;
 					gefunden = true;
 					break;
 				}
 			}
-			
-			long dauer = System.currentTimeMillis() - time;
-			
-			if (!gefunden) {
-				System.out.println("die zahl ist nicht vorhanden");
-			}
-			System.out.println("Es hat " + dauer + "ms gedauert");
-			// for(long x: a)
-			// System.out.println(x);
 
+			double dauerMs = (System.nanoTime() - startZeit) / 1_000_000.0;
+
+			if (gefunden) {
+				System.out.println("Die Zahl wurde am Index " + trefferIndex + " gefunden.");
+			} else {
+				System.out.println("Die Zahl ist nicht vorhanden.");
+			}
+
+			System.out.println("Dauer: " + dauerMs + " ms");
 		}
 	}
 }
